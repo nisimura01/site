@@ -52,39 +52,22 @@
     /* Estilos para o rodapé */
     .footer {
       width: 100%;
-      background-color: #111;
-      color: #b3b3b3;
+      background-color: #000; /* Fundo totalmente preto */
+      color: #fff; /* Texto em branco */
       text-align: center;
       padding: 15px 0;
       font-size: 0.8rem;
       margin-top: 20px;
     }
     .footer a {
-      color: #b3b3b3;
+      color: #b3b3b3; /* Links em cinza claro */
       text-decoration: none;
       margin: 0 10px;
     }
     .footer a:hover {
       text-decoration: underline;
     }
-      /* Estilo reduzido para o rodapé */
-      .footer {
-        font-size: 0.4rem; /* Reduz o tamanho do texto do rodapé em cerca de 70% */
-        padding: 5px 0;
-      }
-      .footer a {
-        color: #000; /* Links em preto */
-        margin: 0 5px;
-      }
-      .footer a::after {
-        content: "|"; /* Adiciona divisórias */
-        color: #000; /* Divisórias em preto */
-        margin: 0 5px;
-      }
-      .footer a:last-child::after {
-        content: ""; /* Remove a divisória após o último link */
-      }
-  
+
     /* Ajustes específicos para mobile */
     @media (max-width: 768px) {
       h1 {
@@ -94,7 +77,7 @@
         margin: 0;
         word-break: break-word;  /* Permite que o texto quebre corretamente */
       }
-
+    }
   </style>
 </head>
 <body>
