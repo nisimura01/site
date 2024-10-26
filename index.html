@@ -52,8 +52,8 @@
     /* Estilos para o rodapé */
     .footer {
       width: 100%;
-      background-color: #111; /* Cinza muito escuro, quase preto */
-      color: #b3b3b3; /* Cinza claro para contraste suave */
+      background-color: #111;
+      color: #b3b3b3;
       text-align: center;
       padding: 15px 0;
       font-size: 0.8rem;
@@ -66,6 +66,24 @@
     }
     .footer a:hover {
       text-decoration: underline;
+    }
+
+    /* Ajustes específicos para mobile */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1rem; /* Diminui o tamanho do primeiro texto */
+        line-height: 1.2;
+      }
+      p {
+        font-size: 0.6rem; /* Diminui o tamanho do segundo texto */
+        white-space: nowrap; /* Garante que o texto fique em uma única linha */
+        overflow: hidden;
+        text-overflow: ellipsis; /* Adiciona reticências se o texto ultrapassar o espaço */
+      }
+      .footer {
+        font-size: 0.6rem; /* Diminui o tamanho do rodapé */
+        padding: 8px 0; /* Reduz a altura do padding */
+      }
     }
   </style>
   
