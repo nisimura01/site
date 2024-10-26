@@ -30,7 +30,7 @@
       margin-top: 20px;
     }
     p {
-      font-size: 0.65rem;
+      font-size: 0.75rem;
       font-weight: bold;
       margin-top: 15px;
       max-width: 90%;
@@ -67,17 +67,6 @@
     .footer a:hover {
       text-decoration: underline;
     }
-
-    /* Ajustes específicos para mobile */
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 1.1rem; /* Ajusta o tamanho do texto */
-        line-height: 1.3; /* Ajusta o espaçamento entre linhas */
-        max-width: 90%; /* Limita a largura para garantir a quebra */
-        margin: 0;
-        word-break: break-word;  /* Permite que o texto quebre corretamente */
-      }
-
       /* Estilo reduzido para o rodapé */
       .footer {
         font-size: 0.4rem; /* Reduz o tamanho do texto do rodapé em cerca de 70% */
@@ -95,7 +84,17 @@
       .footer a:last-child::after {
         content: ""; /* Remove a divisória após o último link */
       }
-    }
+  
+    /* Ajustes específicos para mobile */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 0.9rem; /* Ajusta o tamanho do texto */
+        line-height: 1.3; /* Ajusta o espaçamento entre linhas */
+        max-width: 90%; /* Limita a largura para garantir a quebra */
+        margin: 0;
+        word-break: break-word;  /* Permite que o texto quebre corretamente */
+      }
+
   </style>
 </head>
 <body>
