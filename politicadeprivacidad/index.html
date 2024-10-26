@@ -8,27 +8,60 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            line-height: 1.6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            margin: 0;
             color: #333;
+        }
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         h1 {
             font-size: 2em;
-            color: #2C3E50;
+            color: #2c3e50;
             margin-bottom: 20px;
+            text-align: center;
         }
         h2 {
-            font-size: 1.5em;
-            color: #34495E;
+            font-size: 1.3em;
+            color: #34495e;
             margin-top: 20px;
         }
         p, ul {
             margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        ul {
+            list-style: disc;
+            padding-left: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Política de Privacidad</h1>
-    <p>Esta política explica cómo recopilamos, usamos y compartimos información personal en el sitio de Realiza Group.</p>
+    <div class="container">
+        <h1>Política de Privacidad</h1>
+        <p>Esta política explica cómo recopilamos, usamos y compartimos información personal en el sitio de Realiza Group.</p>
+
+        <h2>Datos Personales Recopilados</h2>
+        <ul>
+            <li>Nombre</li>
+            <li>Correo electrónico</li>
+            <li>Teléfono</li>
+            <li>Datos de tarjeta de crédito (procesados por Stripe)</li>
+        </ul>
+
+        <h2>Finalidad de la Recopilación y Compartición de Datos</h2>
+        <p>Utilizamos estos datos para ofrecer soporte al cliente, procesar pagos y mejorar nuestros servicios. Podemos compartir información con terceros de confianza para cumplir obligaciones contractuales.</p>
+
+        <h2>Retención y Derechos de los Usuarios</h2>
+        <p>Mantenemos la información personal solo durante el tiempo necesario y conforme a la ley. Los usuarios tienen derecho a acceder, corregir o solicitar la eliminación de los datos.</p>
+    </div>
+</body>
+</html>
