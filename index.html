@@ -60,11 +60,35 @@
             font-size: 28px;
             font-weight: bold;
             line-height: 1.2;
+            margin-bottom: 10px;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+        }
+        .video-container .mute-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #FF0000;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
         }
         .video-container img, .video-container video {
             width: 100%;
-            max-width: 100%;
             height: auto;
+        }
+        .sound-warning {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #fff;
         }
         @media (max-width: 768px) {
             .container {
@@ -72,6 +96,13 @@
             }
             .title {
                 font-size: 22px;
+            }
+            .video-container .mute-overlay {
+                font-size: 16px;
+                padding: 8px 16px;
+            }
+            .sound-warning {
+                font-size: 12px;
             }
         }
     </style>
@@ -91,9 +122,10 @@
             <style>
                 .elementor-element:has(#smartplayer) { width: 100%; }
             </style>
+            <div class="mute-overlay">🔇 Haga Clic y Escucha</div>
         </div>
         
-        <p>Asegúrese de que su sonido esté encendido!</p>
+        <p class="sound-warning">🔊 ASEGÚRESE DE QUE SU SONIDO ESTÉ ENCENDIDO!</p>
     </div>
 </body>
 </html>
