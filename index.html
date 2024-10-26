@@ -53,7 +53,7 @@
         }
         .container {
             text-align: center;
-            max-width: 800px;
+            max-width: 1200px;
             padding: 20px;
         }
         .title {
@@ -65,7 +65,7 @@
         .video-container {
             position: relative;
             width: 100%;
-            max-width: 800px;
+            max-width: 1000px; /* Aumentando a largura máxima do vídeo para o desktop */
         }
         .video-container .mute-overlay {
             position: absolute;
@@ -96,6 +96,10 @@
             }
             .title {
                 font-size: 22px;
+                line-height: 1.4;
+                /* Ajustando quebra de linha para mobile */
+                white-space: pre-line;
+                content: "Descubre el Truco de Rejuvenecimiento\n100% Natural";
             }
             .video-container .mute-overlay {
                 font-size: 16px;
