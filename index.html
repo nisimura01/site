@@ -17,22 +17,30 @@
       text-align: center;
       padding: 20px;
     }
-    h1, p {
-      margin: 0;
-      padding: 0;
-    }
     h1 {
-      font-size: 2rem;
+      font-size: 1.5rem;
       line-height: 1.2;
+      margin: 0;
+    }
+    .video-container {
+      width: 100%;
+      max-width: 600px;
+      margin-top: 20px;
     }
     p {
-      margin-top: 15px;
-      font-size: 1rem;
+      font-size: 0.875rem;
       font-weight: bold;
+      margin-top: 15px;
     }
     @media (min-width: 768px) {
       h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .video-container {
+        max-width: 800px;
       }
     }
   </style>
@@ -83,16 +91,15 @@
 
   <h1>Descubre el Truco de Rejuvenecimiento<br>100% Natural</h1>
 
-  <!-- Video -->
-  <script type="text/javascript" id="scr_671ae560fbcadf000bf9a924">
-    var s = document.createElement("script");
-    s.src = "https://scripts.converteai.net/63be0c53-dfc9-49f5-9d4e-3740946d16af/ab-test/671ae560fbcadf000bf9a924/player.js";
-    s.async = !0;
-    document.head.appendChild(s);
-  </script>
-  <style>
-    .elementor-element:has(#smartplayer) { width: 100%; }
-  </style>
+  <!-- Video Container -->
+  <div class="video-container">
+    <script type="text/javascript" id="scr_671ae560fbcadf000bf9a924">
+      var s = document.createElement("script");
+      s.src = "https://scripts.converteai.net/63be0c53-dfc9-49f5-9d4e-3740946d16af/ab-test/671ae560fbcadf000bf9a924/player.js";
+      s.async = !0;
+      document.head.appendChild(s);
+    </script>
+  </div>
 
   <p>🔊 ASEGÚRESE DE QUE SU SONIDO ESTÉ ENCENDIDO!</p>
 
