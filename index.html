@@ -56,10 +56,10 @@
             max-width: 800px;
             padding: 20px;
         }
-        .container img, .container video {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 1.2;
         }
         .mute-button {
             display: flex;
@@ -71,10 +71,19 @@
             padding: 10px;
             border-radius: 5px;
             cursor: pointer;
+            margin: 15px 0;
+        }
+        .video-container img, .video-container video {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
         }
         @media (max-width: 768px) {
             .container {
                 padding: 10px;
+            }
+            .title {
+                font-size: 22px;
             }
             .mute-button {
                 font-size: 16px;
@@ -85,11 +94,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>Descubre el Truco de Rejuvenecimiento 100% Natural</h1>
-        <div>
-            <!-- Mute Button -->
-            <div class="mute-button">Haga Clic y Escucha</div>
-            <!-- Video Embed -->
+        <h1 class="title">Descubre el Truco de Rejuvenecimiento<br>100% Natural</h1>
+        <div class="mute-button">Haga Clic y Escucha</div>
+        
+        <!-- Video Embed -->
+        <div class="video-container">
             <script type="text/javascript" id="scr_671ae560fbcadf000bf9a924">
                 var s=document.createElement("script");
                 s.src="https://scripts.converteai.net/63be0c53-dfc9-49f5-9d4e-3740946d16af/ab-test/671ae560fbcadf000bf9a924/player.js";
@@ -100,6 +109,7 @@
                 .elementor-element:has(#smartplayer) { width: 100%; }
             </style>
         </div>
+        
         <p>Asegúrese de que su sonido esté encendido!</p>
     </div>
 </body>
