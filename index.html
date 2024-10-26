@@ -16,6 +16,7 @@
       justify-content: center;
       text-align: center;
       padding: 20px;
+      min-height: 100vh;
     }
     h1 {
       font-size: 1.3rem;
@@ -48,9 +49,25 @@
       }
     }
 
-    /* Estilo para o rodapé invisível */
+    /* Estilos para o rodapé */
     .footer {
-      display: none; /* Torna o rodapé invisível */
+      width: 100%;
+      background-color: #1a1a1a; /* Cinza escuro para contraste mínimo */
+      color: #b3b3b3; /* Cinza claro para os links */
+      text-align: center;
+      padding: 10px;
+      font-size: 0.8rem;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+    .footer a {
+      color: #b3b3b3;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .footer a:hover {
+      text-decoration: underline;
     }
   </style>
   
@@ -112,7 +129,7 @@
 
   <p>🔊 ASEGÚRESE DE QUE SU SONIDO ESTÉ ENCENDIDO!</p>
 
-  <!-- Rodapé invisível com links -->
+  <!-- Rodapé com links -->
   <footer class="footer">
     <a href="https://pieldeslumbrante.com/politicadeprivacidad/">Política de Privacidad</a> |
     <a href="https://pieldeslumbrante.com/cookiesyconsentimiento/">Cookies y Consentimiento</a> |
