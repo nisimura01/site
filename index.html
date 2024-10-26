@@ -1,128 +1,29 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adiós Arrugas 28 Días</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-      min-height: 100vh;
-    }
-    h1 {
-      font-size: 1.3rem;
-      line-height: 1.2;
-      margin: 0;
-      max-width: 90%;
-    }
-    .video-container {
-      width: 100%;
-      max-width: 600px;
-      margin-top: 20px;
-    }
-    p {
-      font-size: 0.75rem;
-      font-weight: bold;
-      margin-top: 15px;
-      max-width: 90%;
-    }
-    @media (min-width: 768px) {
-      h1 {
-        font-size: 2.5rem;
-        max-width: 100%;
-      }
-      p {
-        font-size: 1rem;
-        max-width: 100%;
-      }
-      .video-container {
-        max-width: 800px;
-      }
-    }
+.footer {
+  width: 100%;
+  background-color: #000; /* Sets the entire footer background to black */
+  color: #b3b3b3;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.8rem;
+  margin-top: 20px;
+}
 
-    /* Estilos para o rodapé */
-    .footer {
-      width: 100%;
-      background-color: #111;
-      color: #b3b3b3;
-      text-align: center;
-      padding: 15px 0;
-      font-size: 0.8rem;
-      margin-top: 20px;
-    }
-    .footer a {
-      color: #b3b3b3;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-    .footer a:hover {
-      text-decoration: underline;
-    }
+.footer a {
+  color: #000; /* Links in black */
+  text-decoration: none;
+  margin: 0 10px;
+}
 
-    /* Ajustes específicos para mobile */
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 1.1rem; /* Ajusta o tamanho do texto */
-        line-height: 1.3; /* Ajusta o espaçamento entre linhas */
-        max-width: 90%; /* Limita a largura para garantir a quebra */
-        margin: 0;
-        word-break: break-word;  /* Permite que o texto quebre corretamente */
-      }
+.footer a:hover {
+  text-decoration: underline;
+}
 
-      /* Estilo reduzido para o rodapé */
-      .footer {
-        font-size: 0.4rem; /* Reduz o tamanho do texto do rodapé em cerca de 70% */
-        padding: 5px 0;
-      }
-      .footer a {
-        color: #000; /* Links em preto */
-        margin: 0 5px;
-      }
-      .footer a::after {
-        content: "|"; /* Adiciona divisórias */
-        color: #000; /* Divisórias em preto */
-        margin: 0 5px;
-      }
-      .footer a:last-child::after {
-        content: ""; /* Remove a divisória após o último link */
-      }
-    }
-  </style>
-</head>
-<body>
+.footer a::after {
+  content: "|";
+  color: #000; /* Divider in black */
+  margin: 0 5px;
+}
 
-  <h1>Descubre el Truco de Rejuvenecimiento<br>100% Natural</h1>
-
-  <!-- Video Container -->
-  <div class="video-container">
-    <script type="text/javascript" id="scr_671ae560fbcadf000bf9a924">
-      var s = document.createElement("script");
-      s.src = "https://scripts.converteai.net/63be0c53-dfc9-49f5-9d4e-3740946d16af/ab-test/671ae560fbcadf000bf9a924/player.js";
-      s.async = !0;
-      document.head.appendChild(s);
-    </script>
-  </div>
-
-  <p>🔊 ASEGÚRESE DE QUE SU SONIDO ESTÉ ENCENDIDO!</p>
-
-  <!-- Rodapé com links e copyright -->
-  <footer class="footer">
-    Copyright © Karen Luz Nisimura – Adiós arrugas 28 Días – All rights reserved
-    <br>
-    <a href="https://pieldeslumbrante.com/politicadeprivacidad/">Política de Privacidad</a>
-    <a href="https://pieldeslumbrante.com/cookiesyconsentimiento/">Cookies y Consentimiento</a>
-    <a href="https://pieldeslumbrante.com/informaciondecontacto/">Información de Contacto</a>
-    <a href="https://pieldeslumbrante.com/terminosycondiciones/">Términos y Condiciones</a>
-  </footer>
-
-</body>
-</html>
+.footer a:last-child::after {
+  content: ""; /* Remove the last divider */
+}
