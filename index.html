@@ -4,116 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adiós Arrugas 28 Días</title>
+  
+  <!-- Inline minified CSS for faster loading -->
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-      min-height: 100vh;
-    }
-    h1 {
-      font-size: 1.3rem;
-      line-height: 1.2;
-      margin: 0;
-      max-width: 90%;
-    }
-    .video-container {
-      width: 100%;
-      max-width: 600px;
-      margin-top: 20px;
-    }
-    p {
-      font-size: 0.75rem;
-      font-weight: bold;
-      margin-top: 15px;
-      max-width: 90%;
-    }
+    body {margin:0; font-family: Arial, sans-serif; background-color: #000; color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px; min-height: 100vh;}
+    h1 {font-size: 1.3rem; line-height: 1.2; margin: 0; max-width: 90%;}
+    .video-container {width: 100%; max-width: 600px; margin-top: 20px;}
+    p {font-size: 0.75rem; font-weight: bold; margin-top: 15px; max-width: 90%;}
     @media (min-width: 768px) {
-      h1 {
-        font-size: 2.5rem;
-        max-width: 100%;
-      }
-      p {
-        font-size: 1rem;
-        max-width: 100%;
-      }
-      .video-container {
-        max-width: 800px;
-      }
+      h1 {font-size: 2.5rem; max-width: 100%;}
+      p {font-size: 1rem; max-width: 100%;}
+      .video-container {max-width: 800px;}
     }
-
-    /* Estilos para o rodapé */
-    .footer {
-      width: 100%;
-      background-color: #111;
-      color: #b3b3b3;
-      text-align: center;
-      padding: 15px 0;
-      font-size: 0.8rem;
-      margin-top: 20px;
-    }
-    .footer a {
-      color: #b3b3b3;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-    .footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* Ajustes específicos para mobile */
+    .footer {width: 100%; background-color: #111; color: #b3b3b3; text-align: center; padding: 15px 0; font-size: 0.8rem; margin-top: 20px;}
+    .footer a {color: #b3b3b3; text-decoration: none; margin: 0 10px;}
+    .footer a:hover {text-decoration: underline;}
     @media (max-width: 768px) {
-      h1 {
-        font-size: 1.1rem; /* Ajusta o tamanho do texto */
-        line-height: 1.3; /* Ajusta o espaçamento entre linhas */
-        max-width: 90%; /* Limita a largura para garantir a quebra */
-        margin: 0;
-        word-break: break-word;  /* Permite que o texto quebre corretamente */
-      }
-
-      /* Estilo reduzido para o rodapé */
-      .footer {
-        font-size: 0.4rem; /* Reduz o tamanho do texto do rodapé em cerca de 70% */
-        padding: 5px 0;
-      }
-      .footer a {
-        color: #000; /* Links em preto */
-        margin: 0 5px;
-      }
-      .footer a::after {
-        content: "|"; /* Adiciona divisórias */
-        color: #000; /* Divisórias em preto */
-        margin: 0 5px;
-      }
-      .footer a:last-child::after {
-        content: ""; /* Remove a divisória após o último link */
-      }
+      h1 {font-size: 1.1rem; line-height: 1.3; max-width: 90%; margin: 0; word-break: break-word;}
+      .footer {font-size: 0.4rem; padding: 5px 0;}
+      .footer a {color: #000; margin: 0 5px;}
+      .footer a::after {content: "|"; color: #000; margin: 0 5px;}
+      .footer a:last-child::after {content: "";}
     }
   </style>
-  
-  <!-- Minified CSS and Defer Loading of Non-Essential Scripts -->
+
+  <!-- Preload important resources and defer non-essential JavaScript -->
   <link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
   <link rel="preload" href="https://images.converteai.net/63be0c53-dfc9-49f5-9d4e-3740946d16af/players/665d49d73515dd000b9de339/thumbnail.jpg" as="image">
 
-  <!-- Lazy-loading script -->
+  <!-- Lazy-loading script and right-click prevention -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       let lazyScript = document.createElement("script");
       lazyScript.src = "https://scripts.converteai.net/63be0c53-dfc9-49f5-9d4e-3740946d16af/ab-test/671ae560fbcadf000bf9a924/player.js";
-      lazyScript.async = true;
+      lazyScript.defer = true;
       document.body.appendChild(lazyScript);
     });
-  </script>
-
-  <!-- Block Right-Click -->
-  <script>
     document.addEventListener('contextmenu', event => event.preventDefault());
   </script>
 </head>
@@ -121,7 +47,7 @@
 
   <h1>Descubre el Truco de Rejuvenecimiento<br>100% Natural</h1>
 
-  <!-- Video Container with Lazy Loading -->
+  <!-- Video Container -->
   <div class="video-container">
     <p>🔊 ASEGÚRESE DE QUE SU SONIDO ESTÉ ENCENDIDO!</p>
   </div>
