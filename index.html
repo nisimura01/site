@@ -71,22 +71,9 @@
     /* Ajustes específicos para mobile */
     @media (max-width: 768px) {
       h1 {
-        font-size: 1rem; /* Ajuste do tamanho do primeiro texto */
+        font-size: 1rem; /* Diminui o tamanho do primeiro texto */
         line-height: 1.2;
-        max-width: 80%; /* Limita a largura para garantir a quebra de linha */
-        white-space: pre-wrap; /* Permite a quebra de linha específica */
       }
-      
-      /* Ajusta o texto para ter exatamente duas linhas */
-      h1::before {
-        content: "Descubre el Truco de";
-        display: block;
-      }
-      h1::after {
-        content: "Rejuvenecimiento 100% Natural";
-        display: block;
-      }
-
       p {
         font-size: 0.6rem; /* Diminui o tamanho do segundo texto */
         white-space: nowrap; /* Garante que o texto fique em uma única linha */
@@ -94,12 +81,8 @@
         text-overflow: ellipsis; /* Adiciona reticências se o texto ultrapassar o espaço */
       }
       .footer {
-        font-size: 0.5rem; /* Diminui o tamanho do rodapé */
-        padding: 5px 0; /* Reduz a altura do padding */
-      }
-      .footer a {
-        color: #000; /* Muda a cor dos links para preto */
-        margin: 0 5px;
+        font-size: 0.6rem; /* Diminui o tamanho do rodapé */
+        padding: 8px 0; /* Reduz a altura do padding */
       }
     }
   </style>
@@ -148,7 +131,7 @@
 </head>
 <body>
 
-  <h1>Descubre el Truco de Rejuvenecimiento</h1>
+  <h1>Descubre el Truco de Rejuvenecimiento<br>100% Natural</h1>
 
   <!-- Video Container -->
   <div class="video-container">
