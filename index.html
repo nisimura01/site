@@ -71,20 +71,20 @@
     /* Ajustes específicos para mobile */
     @media (max-width: 768px) {
       h1 {
-        font-size: 1rem; /* Diminui o tamanho do primeiro texto */
+        font-size: 1rem; /* Ajuste do tamanho do primeiro texto */
         line-height: 1.2;
-        white-space: pre-line; /* Mantém a quebra de linha */
+        max-width: 80%; /* Limita a largura para garantir a quebra de linha */
+        white-space: pre-wrap; /* Permite a quebra de linha específica */
       }
-
-      /* Texto do h1 formatado em duas linhas */
+      
+      /* Ajusta o texto para ter exatamente duas linhas */
       h1::before {
-        content: "Descubre el Truco de Rejuvenecimiento";
+        content: "Descubre el Truco de";
         display: block;
       }
       h1::after {
-        content: "100% Natural";
+        content: "Rejuvenecimiento 100% Natural";
         display: block;
-        margin-top: 5px;
       }
 
       p {
@@ -93,26 +93,12 @@
         overflow: hidden;
         text-overflow: ellipsis; /* Adiciona reticências se o texto ultrapassar o espaço */
       }
-
       .footer {
-        font-size: 0.5rem; /* Diminui o tamanho do rodapé em aproximadamente 60% */
-        padding: 5px 0; /* Reduz ainda mais a altura do padding */
-        line-height: 1.2;
+        font-size: 0.5rem; /* Diminui o tamanho do rodapé */
+        padding: 5px 0; /* Reduz a altura do padding */
       }
       .footer a {
         color: #000; /* Muda a cor dos links para preto */
-        display: inline-block;
-        margin: 0 5px;
-      }
-
-      /* Quebra de linha no rodapé conforme solicitado */
-      .footer::before {
-        content: "Copyright © Karen Luz Nisimura – Adiós arrugas 28 Días\nAll rights reserved";
-        display: block;
-        margin-bottom: 5px;
-      }
-      .footer a {
-        display: inline-block;
         margin: 0 5px;
       }
     }
@@ -178,6 +164,8 @@
 
   <!-- Rodapé com links e copyright -->
   <footer class="footer">
+    Copyright © Karen Luz Nisimura – Adiós arrugas 28 Días – All rights reserved
+    <br>
     <a href="https://pieldeslumbrante.com/politicadeprivacidad/">Política de Privacidad</a> |
     <a href="https://pieldeslumbrante.com/cookiesyconsentimiento/">Cookies y Consentimiento</a> |
     <a href="https://pieldeslumbrante.com/informaciondecontacto/">Información de Contacto</a> |
