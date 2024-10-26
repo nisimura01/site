@@ -21,7 +21,7 @@
       font-size: 1.3rem;
       line-height: 1.2;
       margin: 0;
-      max-width: 90%; /* Ajuste para garantir que o texto quebre em duas linhas */
+      max-width: 90%;
     }
     .video-container {
       width: 100%;
@@ -32,20 +32,25 @@
       font-size: 0.75rem;
       font-weight: bold;
       margin-top: 15px;
-      max-width: 90%; /* Limita a largura para forçar o texto a ficar em uma linha */
+      max-width: 90%;
     }
     @media (min-width: 768px) {
       h1 {
         font-size: 2.5rem;
-        max-width: 100%; /* Remove a restrição na versão desktop */
+        max-width: 100%;
       }
       p {
         font-size: 1rem;
-        max-width: 100%; /* Remove a restrição na versão desktop */
+        max-width: 100%;
       }
       .video-container {
         max-width: 800px;
       }
+    }
+
+    /* Estilo para o rodapé invisível */
+    .footer {
+      display: none; /* Torna o rodapé invisível */
     }
   </style>
   
@@ -106,6 +111,14 @@
   </div>
 
   <p>🔊 ASEGÚRESE DE QUE SU SONIDO ESTÉ ENCENDIDO!</p>
+
+  <!-- Rodapé invisível com links -->
+  <footer class="footer">
+    <a href="https://pieldeslumbrante.com/politicadeprivacidad/">Política de Privacidad</a> |
+    <a href="https://pieldeslumbrante.com/cookiesyconsentimiento/">Cookies y Consentimiento</a> |
+    <a href="https://pieldeslumbrante.com/informaciondecontacto/">Información de Contacto</a> |
+    <a href="https://pieldeslumbrante.com/terminosycondiciones/">Términos y Condiciones</a>
+  </footer>
 
 </body>
 </html>
