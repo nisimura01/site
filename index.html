@@ -70,19 +70,48 @@
 
     /* Ajustes específicos para mobile */
     @media (max-width: 768px) {
+      /* Primeira linha do título */
       h1 {
-        font-size: 1rem; /* Diminui o tamanho do primeiro texto */
+        font-size: 1rem;
         line-height: 1.2;
+        max-width: 80%;
+        margin-bottom: 0; /* Remove margem extra */
+        white-space: pre-line; /* Permite quebra de linha */
       }
+      h1::before {
+        content: "Descubre el Truco de Rejuvenecimiento";
+        display: block;
+      }
+      h1::after {
+        content: "100% Natural";
+        display: block;
+        margin-top: 5px;
+      }
+
+      /* Texto abaixo do vídeo */
       p {
-        font-size: 0.6rem; /* Diminui o tamanho do segundo texto */
-        white-space: nowrap; /* Garante que o texto fique em uma única linha */
+        font-size: 0.6rem;
+        white-space: nowrap;
         overflow: hidden;
-        text-overflow: ellipsis; /* Adiciona reticências se o texto ultrapassar o espaço */
+        text-overflow: ellipsis;
       }
+
+      /* Estilo reduzido para o rodapé */
       .footer {
-        font-size: 0.6rem; /* Diminui o tamanho do rodapé */
-        padding: 8px 0; /* Reduz a altura do padding */
+        font-size: 0.4rem; /* Reduz o tamanho do texto do rodapé em cerca de 70% */
+        padding: 5px 0;
+      }
+      .footer a {
+        color: #000; /* Links em preto */
+        margin: 0 5px;
+      }
+      .footer a::after {
+        content: "|"; /* Adiciona divisórias */
+        color: #000; /* Divisórias em preto */
+        margin: 0 5px;
+      }
+      .footer a:last-child::after {
+        content: ""; /* Remove a divisória após o último link */
       }
     }
   </style>
@@ -131,7 +160,7 @@
 </head>
 <body>
 
-  <h1>Descubre el Truco de Rejuvenecimiento<br>100% Natural</h1>
+  <h1>Descubre el Truco de Rejuvenecimiento</h1>
 
   <!-- Video Container -->
   <div class="video-container">
@@ -149,9 +178,9 @@
   <footer class="footer">
     Copyright © Karen Luz Nisimura – Adiós arrugas 28 Días – All rights reserved
     <br>
-    <a href="https://pieldeslumbrante.com/politicadeprivacidad/">Política de Privacidad</a> |
-    <a href="https://pieldeslumbrante.com/cookiesyconsentimiento/">Cookies y Consentimiento</a> |
-    <a href="https://pieldeslumbrante.com/informaciondecontacto/">Información de Contacto</a> |
+    <a href="https://pieldeslumbrante.com/politicadeprivacidad/">Política de Privacidad</a>
+    <a href="https://pieldeslumbrante.com/cookiesyconsentimiento/">Cookies y Consentimiento</a>
+    <a href="https://pieldeslumbrante.com/informaciondecontacto/">Información de Contacto</a>
     <a href="https://pieldeslumbrante.com/terminosycondiciones/">Términos y Condiciones</a>
   </footer>
 
