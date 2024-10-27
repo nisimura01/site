@@ -6,45 +6,56 @@
   <title>Adiós Arrugas 28 Días</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    /* Estilo para fixar o layout e posicionar o rodapé no final da página */
+    body, html {
       margin: 0;
+      padding: 0;
       font-family: 'Poppins', sans-serif;
       background-color: #000;
       color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Container principal para distribuir o conteúdo */
+    .main-content {
+      flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      text-align: center;
+      justify-content: flex-start; /* Move o conteúdo para o topo */
       padding: 20px;
-      height: 100vh;
-      overflow: hidden;
+      text-align: center;
     }
+
     h1 {
       font-size: 1.3rem;
       line-height: 1.2;
       margin: 0;
       max-width: 90%;
+      margin-top: 20px; /* Ajuste opcional para espaçamento superior */
     }
+
     .video-container {
       width: 100%;
       max-width: 600px;
       margin-top: 20px;
     }
+
     p {
       font-size: 0.75rem;
       font-weight: bold;
       margin-top: 15px;
       max-width: 90%;
-      word-break: break-word;  /* Permite que o texto quebre corretamente */
-
+      word-break: break-word; /* Permite que o texto quebre corretamente */
     }
+
+    /* Ajustes para telas maiores */
     @media (min-width: 768px) {
       h1 {
         font-size: 1.8rem;
         max-width: 100%;
-        word-break: break-word;  /* Permite que o texto quebre corretamente */
-        margin: 0;
         line-height: 1.3;
       }
       p {
@@ -59,18 +70,19 @@
     /* Estilos para o rodapé */
     .footer {
       width: 100%;
-      background-color: #000; /* Fundo totalmente preto */
-      color: #fff; /* Texto em branco */
+      background-color: #000;
+      color: #fff;
       text-align: center;
       padding: 15px 0;
       font-size: 0.6rem;
-      margin-top: 20px;
     }
+
     .footer a {
-      color: #000; /* Links em cinza claro */
+      color: #b3b3b3;
       text-decoration: none;
       margin: 0 10px;
     }
+
     .footer a:hover {
       text-decoration: underline;
     }
@@ -78,23 +90,25 @@
 </head>
 <body>
 
-  <h1>Descubre el Truco de Rejuvenecimiento
-  <br>100% Natural</h1>
+  <!-- Container principal para o conteúdo -->
+  <div class="main-content">
+    <h1>Descubre el Truco de Rejuvenecimiento<br>100% Natural</h1>
 
-  <!-- Video Container -->
-  <div class="video-container">
-    <script type="text/javascript" id="scr_671ae560fbcadf000bf9a924">
-      var s = document.createElement("script");
-      s.src = "https://scripts.converteai.net/63be0c53-dfc9-49f5-9d4e-3740946d16af/ab-test/671ae560fbcadf000bf9a924/player.js";
-      s.async = !0;
-      document.head.appendChild(s);
-    </script>
+    <!-- Video Container -->
+    <div class="video-container">
+      <script type="text/javascript" id="scr_671ae560fbcadf000bf9a924">
+        var s = document.createElement("script");
+        s.src = "https://scripts.converteai.net/63be0c53-dfc9-49f5-9d4e-3740946d16af/ab-test/671ae560fbcadf000bf9a924/player.js";
+        s.async = !0;
+        document.head.appendChild(s);
+      </script>
+    </div>
+
+    <p>🔊 ASEGÚRESE DE QUE SU SONIDO ESTÉ ENCENDIDO!</p>
   </div>
 
-  <p>🔊 ASEGÚRESE DE QUE SU SONIDO ESTÉ ENCENDIDO!</p>
-
-<!-- Rodapé com links e copyright -->
-<footer class="footer">
+  <!-- Rodapé no final da página -->
+  <footer class="footer">
     Copyright © All rights reserved
     <br>
     Karen Luz Nisimura – Adiós arrugas 28 Días
@@ -103,7 +117,7 @@
     <a href="https://pieldeslumbrante.com/cookiesyconsentimiento/">Cookies y Consentimiento</a>
     <a href="https://pieldeslumbrante.com/informaciondecontacto/">Información de Contacto</a>
     <a href="https://pieldeslumbrante.com/terminosycondiciones/">Términos y Condiciones</a>
-</footer>
+  </footer>
 
 </body>
 </html>
