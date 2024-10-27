@@ -6,26 +6,27 @@
   <title>Adiós Arrugas 28 Días</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    /* Estilo para fixar o layout e posicionar o rodapé no final da página */
-    body, html {
+    /* Mantém a estrutura do corpo e define layout flexível */
+    body {
       margin: 0;
-      padding: 0;
       font-family: 'Poppins', sans-serif;
       background-color: #000;
       color: #fff;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    /* Container principal para distribuir o conteúdo */
-    .main-content {
-      flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start; /* Move o conteúdo para o topo */
       padding: 20px;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Novo container para o conteúdo centralizado no topo */
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-grow: 1;
+      justify-content: flex-start; /* Mantém o conteúdo mais para o topo */
       text-align: center;
     }
 
@@ -34,7 +35,6 @@
       line-height: 1.2;
       margin: 0;
       max-width: 90%;
-      margin-top: 20px; /* Ajuste opcional para espaçamento superior */
     }
 
     .video-container {
@@ -48,10 +48,9 @@
       font-weight: bold;
       margin-top: 15px;
       max-width: 90%;
-      word-break: break-word; /* Permite que o texto quebre corretamente */
+      word-break: break-word;
     }
 
-    /* Ajustes para telas maiores */
     @media (min-width: 768px) {
       h1 {
         font-size: 1.8rem;
@@ -75,14 +74,13 @@
       text-align: center;
       padding: 15px 0;
       font-size: 0.6rem;
+      margin-top: 20px;
     }
-
     .footer a {
-      color: #b3b3b3;
+      color: #000;
       text-decoration: none;
       margin: 0 10px;
     }
-
     .footer a:hover {
       text-decoration: underline;
     }
@@ -90,8 +88,8 @@
 </head>
 <body>
 
-  <!-- Container principal para o conteúdo -->
-  <div class="main-content">
+  <!-- Container para manter o conteúdo no topo -->
+  <div class="content-wrapper">
     <h1>Descubre el Truco de Rejuvenecimiento<br>100% Natural</h1>
 
     <!-- Video Container -->
@@ -107,7 +105,7 @@
     <p>🔊 ASEGÚRESE DE QUE SU SONIDO ESTÉ ENCENDIDO!</p>
   </div>
 
-  <!-- Rodapé no final da página -->
+  <!-- Rodapé fixado no final da página -->
   <footer class="footer">
     Copyright © All rights reserved
     <br>
