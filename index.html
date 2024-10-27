@@ -4,87 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adiós Arrugas 28 Días</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Carregamento assíncrono da fonte Poppins para melhorar desempenho -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+
   <style>
-    /* Mantém a estrutura do corpo e define layout flexível */
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #000;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-      height: 90vh;
-      overflow: hidden;
-    }
-
-    /* Novo container para o conteúdo centralizado no topo */
-    .content-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex-grow: 1;
-      justify-content: flex-start; /* Mantém o conteúdo mais para o topo */
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 1.3rem;
-      line-height: 1.2;
-      margin: 0;
-      max-width: 90%;
-      margin-top: 40px;
-    }
-
-    .video-container {
-      width: 100%;
-      max-width: 600px;
-      margin-top: 20px;
-    }
-
-    p {
-      font-size: 0.75rem;
-      font-weight: bold;
-      margin-top: 15px;
-      max-width: 90%;
-      word-break: break-word;
-    }
-
-    @media (min-width: 768px) {
-      h1 {
-        font-size: 1.4rem;
-        max-width: 100%;
-        line-height: 1.3;
-      }
-      p {
-        font-size: 0.7rem;
-        max-width: 100%;
-      }
-      .video-container {
-        max-width: 800px;
-      }
-    }
-
-    /* Estilos para o rodapé */
-    .footer {
-      width: 100%;
-      background-color: #000;
-      color: #fff;
-      text-align: center;
-      padding: 15px 0;
-      font-size: 0.6rem;
-      margin-top: 20px;
-    }
-    .footer a {
-      color: #000;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-    .footer a:hover {
-      text-decoration: underline;
-    }
+    /* CSS minificado para melhorar o desempenho */
+    body{margin:0;font-family:'Poppins',sans-serif;background-color:#000;color:#fff;display:flex;flex-direction:column;align-items:center;padding:20px;height:90vh;overflow:hidden}
+    .content-wrapper{display:flex;flex-direction:column;align-items:center;flex-grow:1;justify-content:flex-start;text-align:center}
+    h1{font-size:1.3rem;line-height:1.2;margin:0;max-width:90%;margin-top:40px}
+    .video-container{width:100%;max-width:600px;margin-top:20px}
+    p{font-size:0.75rem;font-weight:bold;margin-top:15px;max-width:90%;word-break:break-word}
+    @media (min-width:768px){h1{font-size:1.4rem;max-width:100%;line-height:1.3}p{font-size:0.7rem;max-width:100%}.video-container{max-width:800px}}
+    .footer{width:100%;background-color:#000;color:#fff;text-align:center;padding:15px 0;font-size:0.6rem;margin-top:20px}
+    .footer a{color:#000;text-decoration:none;margin:0 10px}
+    .footer a:hover{text-decoration:underline}
   </style>
 </head>
 <body>
