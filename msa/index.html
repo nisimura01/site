@@ -10,23 +10,30 @@
             color: white;
             font-family: Arial, sans-serif;
             text-align: center;
+            margin: 0;
+            padding: 0;
         }
 
         h1 {
-            font-size: 2em;
             margin-top: 20px;
+            font-size: 2.5em;
         }
 
         h2 {
+            margin: 10px 0;
             font-size: 1.5em;
-            margin: 20px 0;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
         }
 
         .video-container {
             position: relative;
             width: 50%;
             margin: 0 auto;
-            padding-top: 28.177%; /* Aspect ratio for video */
+            padding-top: 56.25%; /* Aspect ratio 16:9 */
         }
 
         .video-container img {
@@ -43,44 +50,63 @@
             margin-top: 20px;
         }
     </style>
-    <script>
-        // Script to display Hotmart widget after 440 seconds
-        function showHotmartWidget() {
-            setTimeout(() => {
-                document.getElementById('hotmart-sales-funnel').style.display = 'block';
-            }, 440000); // 440 seconds in milliseconds
-        }
-    </script>
 </head>
-<body onload="showHotmartWidget()">
+<body>
+    <!-- Conteúdo principal -->
     <h1>LESSON 1</h1>
     <h2>You have reached the <u>Instruction Module</u> of the Journey with My Angel</h2>
     <p>Listen carefully and enjoy your journey!</p>
 
-    <div class="video-container">
-        <img src="https://images.converteai.net/10fdc90e-69b1-45bc-8299-d01bf42cb087/players/673eb3619bf135000ca6e55d/thumbnail.jpg" alt="Video Thumbnail">
+    <!-- Contêiner do vídeo -->
+    <div id="vid_673eb3619bf135000ca6e55d" class="video-container">
+        <img id="thumb_673eb3619bf135000ca6e55d" src="https://images.converteai.net/10fdc90e-69b1-45bc-8299-d01bf42cb087/players/673eb3619bf135000ca6e55d/thumbnail.jpg" alt="thumbnail">
+        <div id="backdrop_673eb3619bf135000ca6e55d" style=" -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div>
     </div>
 
-    <!-- HOTMART - Sales Funnel Widget -->
+    <!-- Widget da Hotmart -->
     <div id="hotmart-sales-funnel"></div>
+
+    <!-- Scripts -->
+    <script>
+        // Script para exibir o widget da Hotmart com delay
+        setTimeout(() => {
+            document.getElementById('hotmart-sales-funnel').style.display = 'block';
+        }, 440000); // 440 segundos
+    </script>
+
+    <script>
+        window.pixelId = "66f84191228fec57c7a6168b";
+
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+        document.head.appendChild(a);
+    </script>
+
+    <!-- HOTMART - Sales Funnel Widget -->
     <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
     <script>
         checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
     </script>
     <!-- HOTMART - Sales Funnel Widget -->
 
-    <script
-        src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-        async
-        defer
-    ></script>
-    <script>
-        window.pixelId = "66f84191228fec57c7a6168b";
-        var pixelScript = document.createElement("script");
-        pixelScript.setAttribute("async", "");
-        pixelScript.setAttribute("defer", "");
-        pixelScript.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-        document.head.appendChild(pixelScript);
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" async defer></script>
+
+    <script type="text/javascript" id="scr_673eb3619bf135000ca6e55d">
+        var s = document.createElement("script");
+        s.src = "https://scripts.converteai.net/10fdc90e-69b1-45bc-8299-d01bf42cb087/players/673eb3619bf135000ca6e55d/player.js";
+        s.async = true;
+        document.head.appendChild(s);
     </script>
+
+    <link rel="preload" href="https://scripts.converteai.net/63be0c53-dfc9-49f5-9d4e-3740946d16af/players/665d49d73515dd000b9de339/player.js" as="script">
+    <link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
+    <link rel="preload" href="https://images.converteai.net/63be0c53-dfc9-49f5-9d4e-3740946d16af/players/665d49d73515dd000b9de339/thumbnail.jpg" as="image">
+    <link rel="preload" href="https://cdn.converteai.net/63be0c53-dfc9-49f5-9d4e-3740946d16af/64a3f5db898cc800097ae277/main.m3u8" as="fetch">
+    <link rel="dns-prefetch" href="https://cdn.converteai.net">
+    <link rel="dns-prefetch" href="https://scripts.converteai.net">
+    <link rel="dns-prefetch" href="https://images.converteai.net">
+    <link rel="dns-prefetch" href="https://api.vturb.com.br">
 </body>
 </html>
